@@ -15,20 +15,25 @@ const ContextAPI = () => {
   };
   return (
     <>
-      <div style={{border:"15px dashed yellow" , backgroundColor:"black" , padding:"3em"}}>
+      <div>
 
           <PersonContext.Provider
               value={{removePerson , people}}
               style={{backgroundColor:"yellowgreen" , border:"3px solid black"}}>
 
-          <h3 style={{color:"white"}}>context API // useContext</h3>
+          <h3 style={{marginBottom:"1.5em"}}>List of items</h3>
           <List />
 
               <button className="btn"
                       type="button"
-                      style={{border:"5px dashed yellow"}}
-                      onClick={() =>setPeople([])}//sterge toate persoanele
-              >clear person ITEMS // ALL PERSONS // I am a button from 3-useState-array.js</button>
+                      style={{ marginBottom:"1.5em" ,
+                          marginTop:"1.5em",
+                          fontSize:"1em" ,
+                          backgroundColor:"mediumspringgreen" ,
+                          border:"3px solid indianred" ,
+                          borderRadius:"1.5em"}}
+                      onClick={() =>setPeople([])}//delite all items
+              >Clear all items from the list</button>
 
           </PersonContext.Provider>
       </div>
@@ -63,7 +68,15 @@ const SinglePerson = ({ id, name }) => {
   return (
     <div className='item'>
       <h4>{name}</h4>
-      <button onClick={() => removePerson(id)}>remove</button>
+      <button
+          onClick={() => removePerson(id)}
+          style={{ marginBottom:"1.5em" ,
+              marginTop:"1.5em",
+              fontSize:"1em" ,
+              backgroundColor:"mediumspringgreen" ,
+              border:"3px solid indianred" ,
+              borderRadius:"1.5em"}}
+      >Remove</button>
     </div>
   );
 };

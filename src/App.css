@@ -3,13 +3,12 @@ nav{
     justify-content: space-around;
     align-items: center;
     min-height:10vh;
-    background-color: mediumpurple;
 }
 
 .nav-links{
     width:40%;
     display:flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     list-style: none;
 
@@ -17,10 +16,6 @@ nav{
 
 .ulShop{
     list-style: none;
-}
-
-.liNavbar{
-    /*text-decoration: none;*/
 }
 
 .liNavbar{

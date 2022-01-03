@@ -6,14 +6,8 @@ import Nav from "./myPages/Navbar";
 import {Home} from "./myPages/home";
 
 import {BrowserRouter , Route ,Routes } from "react-router-dom";
-import Index from "./TutorialComponents/6-useReducer/setup";
-import ContextAPI from "./TutorialComponents/8-useContext/setup/1-context-api";
+
 import {NotFound} from "./myPages/not-found";
-
-
-
-
-
 
 
 function AppGabi(){
@@ -27,14 +21,16 @@ function AppGabi(){
 
                  <Route path={"/"}  element={<Home/>}/>
                  <Route path={"/about"} element={<About/>}/>
-                 <Route path={"/shop"} element={<Shop/>}/>
+                 <Route path={"/shop"} exact element={<Shop/>}/>
                  <Route path={"*"} element={<NotFound/>}/>
 
              </Routes>
 
+             <footer style={{textAlign:"center"}}>
+               <h3>  Sources : </h3>
+               <p>https://course-api.com/javascript-store-products</p>
+             </footer>
 
-             <Index/>
-             <ContextAPI/>
 
              </BrowserRouter>
              </div>

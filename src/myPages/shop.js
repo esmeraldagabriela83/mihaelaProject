@@ -1,4 +1,5 @@
 import React  , {useState , useEffect} from "react";
+import {Link} from "react-router-dom";
 import "../App.css";
 
 function Shop(){
@@ -19,19 +20,23 @@ function Shop(){
 
     return(
         <>
+            <section style={{textAlign:"center"}}>
             <div >
-                <h1> Shop Page</h1>
+                <h2> Items with id :</h2>
             </div>
 
             <ul className="ulShop">
                 {items.map((item) =>{
                    return (
                        <>
-                           <li key="item.id">The id of the item is {item.id} .</li>
+                           <li key="item.id" >
+                               <Link to={`/shop/${item.id}`} style={{color:"mediumspringgreen"}}>The id of the item is {item.id} .</Link>
+                           </li>
                        </>
                    )
                     })}
             </ul>
+            </section>
         </>
     );
 }
@@ -40,5 +45,3 @@ export default Shop;
 
 ////https://course-api.com/javascript-store-products   from testing two free code camp
 
-///https://fortnite-public-api.theapinetwork.com/prod09/upcoming/get    has been blocked by CORS policy: No 'Access-Control-Allow-Origin'
-//tutorial : https://www.youtube.com/watch?v=Law7wfdg_ls&t=646s

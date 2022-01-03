@@ -2,7 +2,7 @@
 
 
 export const reducer=(state , action) =>{
-    console.log(state , action);      //{people: Array(0), isModalOpen: false, modalContent: 'hello me'} {type: 'TESTING'}
+    console.log(state , action);
     console.log(state);
     if(action.type === "ADD_ITEM"){
 
@@ -18,7 +18,7 @@ export const reducer=(state , action) =>{
     }
 
     if(action.type === "NO_VALUE"){
-        return{...state , isModalOpen:true ,modalContent:"please , enter your value"}
+        return{...state , isModalOpen:true ,modalContent:"Please , enter your value"}
     }
     if(action.type === "CLOSE_MODAL"){
         return {...state , isModalOpen:false}

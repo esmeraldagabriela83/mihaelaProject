@@ -6,7 +6,7 @@ function Nav(){
     return(
         <>
             <nav>
-                <h3>LogoMy</h3>
+                <h3 className="logoText">Project<span>Logo</span></h3>
                 <ul className="nav-links">
                     <Link to="/home"><li className="liNavbar">Home</li></Link>
                     <Link to="/about"><li className="liNavbar">About</li></Link>

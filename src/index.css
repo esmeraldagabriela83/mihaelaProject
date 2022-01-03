@@ -25,6 +25,11 @@ body{
 }
 
 
+.logoText{
+    text-shadow: 1px 1px 5px mediumspringgreen;
+}
+
+
 @media screen and (min-width:960px){
 
     body{
@@ -33,9 +38,12 @@ body{
     }
 
     .containerAppGabi{
-        border:3px dotted darkred;
         font-size:2rem ;
         font-weight: bold;
         font-family: 'Roboto', sans-serif;
+    }
+
+    .logoText{
+        text-shadow: 1px 1px 5px gray;
     }
 }
