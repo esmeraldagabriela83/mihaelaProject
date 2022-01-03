@@ -1,0 +1,37 @@
+nav{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height:10vh;
+    background-color: mediumpurple;
+}
+
+.nav-links{
+    width:40%;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+
+}
+
+.ulShop{
+    list-style: none;
+}
+
+.liNavbar{
+    /*text-decoration: none;*/
+}
+
+.liNavbar{
+    color:indianred;
+}
+li:hover{
+    color:orangered;
+    text-decoration: none;
+}
+
+li:active{
+    color:mediumspringgreen;
+    text-decoration: none;
+}
