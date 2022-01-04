@@ -26,9 +26,9 @@ function AppGabi(){
 
              </Routes>
 
-             <footer style={{textAlign:"center"}}>
-               <h3>  Sources : </h3>
-               <p>https://course-api.com/javascript-store-products</p>
+             <footer style={{textAlign:"center" , marginTop:"1.5em"}}>
+               <h5>  Sources : </h5>
+               <h6>https://course-api.com/javascript-store-products</h6>
              </footer>
 
 

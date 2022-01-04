@@ -44,12 +44,18 @@ const Index = () => {
                 onSubmit={handleSubmit}
                 className="form" >
             <div >
-              <div style={{marginTop:"1.5em"}}>
-                <label htmlFor='name'>Item Name :</label>
+              <div style={{marginTop:"1.5em" , marginBottom:"1.5em" ,  paddingTop:"1.5em"}}>
+                <label htmlFor='name' >Item Name :</label>
               </div>
               <div>
-                <input
-                    style={{border:"3px solid indianred" , width:"17em" , height:"3em" , borderRadius:"1.5em"}}
+                <input className="inputItemAbout"
+                    style={{
+                        color:"wheat",
+                        fontSize:"1em",
+                        border:"3px solid mediumspringgreen" ,
+                        backgroundColor:"indianred" ,
+                        padding:"0.5em",
+                        borderRadius:"0.5em"}}
                     type="text"
                     value={name}
                     onChange={(event) =>setName(event.target.value)}/>
@@ -58,6 +64,7 @@ const Index = () => {
             <button type="submit"
                     style={{ marginBottom:"1.5em" ,
                       marginTop:"1.5em",
+                      padding:"0.7em",
                       fontSize:"1em" ,
                       backgroundColor:"mediumspringgreen" ,
                       border:"3px solid indianred" ,
@@ -72,7 +79,7 @@ const Index = () => {
                 <h4>My id is number {person.id} and my value is {person.name} .</h4>
                 <button
                     type="button"
-                    style={{fontSize:"1em" , backgroundColor:"mediumspringgreen" , border:"3px solid indianred" , borderRadius:"1.5em"}}
+                    style={{marginTop:"1.5em" ,marginBottom:"1.5em" , padding:"0.7em", fontSize:"1em" , backgroundColor:"mediumspringgreen" , border:"3px solid indianred" , borderRadius:"1.5em"}}
                     onClick={()=> dispatch({type:"REMOVE_ITEM" , payload:person.id}) }>Remove Item</button>
               </div>
                 </>

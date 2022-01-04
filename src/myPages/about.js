@@ -7,9 +7,15 @@ function About(){
     return(
         <>
         <div style={{textAlign:"center"}}>
-            <h1 style={{marginTop:"1.5em" , marginBottom:"1em"}}>Create and delite item</h1>
-            <Index/>
-            <ContextAPI/>
+            <h2 className="createDeleteItemAbout"
+                style={{marginTop:"1.5em" , marginBottom:"1em"}}>Create and delete item</h2>
+           <div className="componentTagAbout">
+               <Index/>
+           </div>
+
+            <div className="componentTagAbout">
+                <ContextAPI/>
+            </div>
         </div>
         </>
     );

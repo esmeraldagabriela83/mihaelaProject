@@ -24,10 +24,15 @@ body{
     width:90vw;
 }
 
+button{
+    font-family: "Roboto Thin";
+    color:darkblue;
+}
 
 .logoText{
     text-shadow: 1px 1px 5px mediumspringgreen;
 }
+
 
 
 @media screen and (min-width:960px){
@@ -44,6 +49,29 @@ body{
     }
 
     .logoText{
-        text-shadow: 1px 1px 5px gray;
+        text-shadow: 3px 3px 5px gray;
+    }
+
+    button{
+        box-shadow:3px 3px 5px gray;
+        font-family:'Roboto', sans-serif;
+        color:darkblue;
+    }
+
+    .imgItemAbout{
+        box-shadow:3px 3px 5px gray;
+    }
+
+    .inputItemAbout{
+        box-shadow:3px 3px 5px gray;
+    }
+
+    .createDeleteItemAbout{
+        text-shadow:3px 3px 5px gray;
+    }
+
+    .componentTagAbout{
+        box-shadow:1px 1px 3px gray;
+        border-radius: 0.5em;
     }
 }

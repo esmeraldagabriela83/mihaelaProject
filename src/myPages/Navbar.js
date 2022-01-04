@@ -6,9 +6,9 @@ function Nav(){
     return(
         <>
             <nav>
-                <h3 className="logoText">Project<span>Logo</span></h3>
+                <h4 className="logoText">Project<br/><span style={{letterSpacing:"10px"}}>Logo</span></h4>
                 <ul className="nav-links">
-                    <Link to="/home"><li className="liNavbar">Home</li></Link>
+                    <Link to="/"><li className="liNavbar">Home</li></Link>
                     <Link to="/about"><li className="liNavbar">About</li></Link>
                     <Link to="/shop"><li className="liNavbar">Shop</li></Link>
                 </ul>

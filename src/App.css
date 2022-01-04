@@ -30,3 +30,24 @@ li:active{
     color:mediumspringgreen;
     text-decoration: none;
 }
+
+.colorLink{
+    color:mediumspringgreen;
+}
+
+.colorLink:hover{
+    color:indianred;
+}
+
+.colorLink:active{
+    color:orangered;
+}
+
+
+
+
+
+
+
+
+

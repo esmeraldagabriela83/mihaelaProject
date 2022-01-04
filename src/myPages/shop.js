@@ -29,8 +29,14 @@ function Shop(){
                 {items.map((item) =>{
                    return (
                        <>
-                           <li key="item.id" >
-                               <Link to={`/shop/${item.id}`} style={{color:"mediumspringgreen"}}>The id of the item is {item.id} .</Link>
+                           <li key={item.id} >
+                               {/*<Link to={`/shop/${item.id}`} style={{color:"mediumspringgreen"}}>The id of the item is {item.id} .</Link>*/}
+                               <Link to={`/shop/${item.id}`} style={{color:"mediumspringgreen"}}>
+                                   {item.fields.name}
+                                   {item.fields.image.map((image) =>{
+                                       return <img key={image.id} src={image.url} alt={item.name}/>
+                                   })}
+                               </Link>
                            </li>
                        </>
                    )
