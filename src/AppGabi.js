@@ -27,8 +27,22 @@ function AppGabi(){
              </Routes>
 
              <footer style={{textAlign:"center" , marginTop:"1.5em"}}>
-               <h5>  Sources : </h5>
-               <h6>https://course-api.com/javascript-store-products</h6>
+
+                 <div className="supervisors" style={{marginBottom:"1.5em"}}>
+                     <div className="catalin">
+                     <h5>Catalin Marin</h5>
+                     </div>
+
+                     <div className="supervisorsAnimation">
+                         <h6><span>Supervisors</span></h6>
+                     </div>
+
+                     <div className="costica">
+                     <h5 >Costica Puntaru</h5>
+                     </div>
+
+                 </div>
+
              </footer>
 
 

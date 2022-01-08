@@ -33,6 +33,58 @@ button{
     text-shadow: 1px 1px 5px mediumspringgreen;
 }
 
+.supervisors{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+@keyframes pulse {
+    from {
+        transform: scale(0.5);
+    }
+
+    to {
+        transform: scale(1.5);
+    }
+}
+
+
+.catalin {
+    animation: pulse 3s infinite alternate;
+}
+.costica {
+    animation: pulse 3s infinite alternate;
+}
+
+
+.catalin{
+    margin-right:2.5em;
+}
+.costica{
+    margin-left:2.5em;
+}
+
+.supervisorsAnimation{
+    width: 6.5em;
+    height: 2.5em;
+    background: indianred;
+    border:5px solid mediumspringgreen;
+    transition: 0.5s;
+    border-radius:1.5em;
+    color:darkblue;
+
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.supervisorsAnimation:hover{
+    background: mediumspringgreen;
+    border:5px solid indianred;
+    transform: scale(1.3);
+    box-shadow:3px 3px 5px gray;
+}
 
 
 @media screen and (min-width:960px){
@@ -73,5 +125,11 @@ button{
     .componentTagAbout{
         box-shadow:1px 1px 3px gray;
         border-radius: 0.5em;
+    }
+
+    .supervisors{
+        display:flex;
+        align-items: center;
+        justify-content: center;
     }
 }

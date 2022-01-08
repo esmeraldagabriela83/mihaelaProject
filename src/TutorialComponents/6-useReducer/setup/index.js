@@ -75,7 +75,7 @@ const Index = () => {
           {state.people.map((person) =>{
             return (
                 <>
-              <div key={person.id} className="item">
+              <div key={person.id} className="componentTagAbout">
                 <h4>My id is number {person.id} and my value is {person.name} .</h4>
                 <button
                     type="button"

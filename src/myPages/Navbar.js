@@ -6,7 +6,7 @@ function Nav(){
     return(
         <>
             <nav>
-                <h4 className="logoText">Project<br/><span style={{letterSpacing:"10px"}}>Logo</span></h4>
+                <h4 className="logoText">Project<br/><span style={{letterSpacing:"10px"}}>AMG</span></h4>
                 <ul className="nav-links">
                     <Link to="/"><li className="liNavbar">Home</li></Link>
                     <Link to="/about"><li className="liNavbar">About</li></Link>
