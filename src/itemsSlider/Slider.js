@@ -54,7 +54,7 @@ function Slider() {
                         <img src = {image} alt={name} className="item-img"/>
                         <h4 style={{marginTop:"0.5em" , marginBottom:"0.5em"}}>{name} item</h4>
                         <h4 style={{marginTop:"0.5em" , marginBottom:"0.5em"}}>{quality}</h4>
-                        <h6 style={{marginTop:"0.5em"}}>{quote}</h6>
+                        <h6 style={{marginTop:"0.5em" , marginLeft:"3em" , marginRight:"3em"}}>{quote}</h6>
                     </article>
                 })}
 

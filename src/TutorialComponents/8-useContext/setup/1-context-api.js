@@ -5,23 +5,23 @@ import { data } from '../../../data';
 
 
 
-const PersonContext=React.createContext();
+const ItemContext=React.createContext();
 
 
 const ContextAPI = () => {
-  const [people, setPeople] = useState(data);
-  const removePerson = (id) => {
-    setPeople((people) => {
-      return people.filter((person) => person.id !== id);
+  const [items, setItems] = useState(data);
+  const removeItem = (id) => {
+      setItems((items) => {
+      return items.filter((item) => item.id !== id);
     });
   };
 
 
 
-  if(people.length === 0){
+  if(items.length === 0){
       return(
           <main>
-             <h3>No items left in the list </h3>
+             <h3 style={{marginTop:"1.5em" , marginBottom:"1.5em" , paddingTop:"0.7em" , paddingBottom:"0.7em"}}>No items left in the list </h3>
 
           </main>
       )
@@ -31,8 +31,8 @@ const ContextAPI = () => {
     <>
       <div>
 
-          <PersonContext.Provider
-              value={{removePerson , people}}
+          <ItemContext.Provider
+              value={{removeItem , items}}
               style={{backgroundColor:"yellowgreen" , border:"3px solid black"}}>
 
           <h3 style={{marginBottom:"1.5em" ,marginTop:"1.5em" , paddingTop:"1.5em" }}>List of {data.length} items</h3>
@@ -45,7 +45,7 @@ const ContextAPI = () => {
                           backgroundColor:"mediumspringgreen" ,
                           border:"3px solid indianred" ,
                           borderRadius:"1.5em"}}
-                      onClick={() =>setPeople([])}//delite all items
+                      onClick={() =>setItems([])}//delite all items
               >Clear all items from the list</button>
 
               <h5 style={{marginTop:"0.5em" , marginBottom:"0.5em"}}>Photo sources</h5>
@@ -86,7 +86,7 @@ const ContextAPI = () => {
                   </a>
               </div>
 
-          </PersonContext.Provider>
+          </ItemContext.Provider>
       </div>
     </>
   );
@@ -94,16 +94,16 @@ const ContextAPI = () => {
 
 const List = () => {
 
-    const mainData=useContext(PersonContext);
+    const mainData=useContext(ItemContext);
 console.log("mainData is : " , mainData);
 
   return (
     <>
-      {mainData.people.map((person) => {
+      {mainData.items.map((item) => {
         return (
-          <SinglePerson
-            key={person.id}
-            {...person}
+          <SingleItem
+            key={item.id}
+            {...item}
           />
         );
       })}
@@ -111,9 +111,9 @@ console.log("mainData is : " , mainData);
   );
 };
 
-const SinglePerson = ({ id, name ,quality , image , info}) => {
+const SingleItem = ({ id, name ,quality , image , info}) => {
 
-    const {removePerson}=useContext(PersonContext);
+    const {removeItem}=useContext(ItemContext);
     console.log("inside SingleItem" , data);//(4) [{…}, {…}, {…}, {…}]
 
     const [readMore , setReadMore]=useState(false) ;
@@ -150,7 +150,7 @@ const SinglePerson = ({ id, name ,quality , image , info}) => {
         </div>
 
       <button
-          onClick={() => removePerson(id)}
+          onClick={() => removeItem(id)}
           style={{ marginBottom:"1.5em" ,
               marginTop:"1.5em",
               padding:"0.7em",

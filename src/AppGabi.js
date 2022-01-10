@@ -8,6 +8,7 @@ import {Home} from "./myPages/home";
 import {BrowserRouter , Route ,Routes } from "react-router-dom";
 
 import {NotFound} from "./myPages/not-found";
+import Item from "./myShop/itemDetail";
 
 
 function AppGabi(){
@@ -23,7 +24,7 @@ function AppGabi(){
                  <Route path={"/about"} element={<About/>}/>
                  <Route path={"/shop"} exact element={<Shop/>}/>
                  <Route path={"*"} element={<NotFound/>}/>
-
+                 <Route path={"/shop/:id"} element={<Item/>}/>
              </Routes>
 
              <footer style={{textAlign:"center" , marginTop:"1.5em"}}>

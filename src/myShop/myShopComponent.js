@@ -18,7 +18,7 @@ function MyShopComponent(){
         fetchItems();
     } , []);
 
-    const fetchItems= async() =>{
+    const fetchItems = async() =>{
         const data=await fetch("https://course-api.com/javascript-store-products");
 
         const items=await data.json();
@@ -33,12 +33,39 @@ function MyShopComponent(){
         return(
             <main>
                 <div className="title">
-                    <h2>no items left</h2>
+                    <h2>No items left</h2>
+
                     <button
-                        style={{fontSize:"2em" ,
-                            backgroundColor:"yellow" ,
-                            color:"blue"}}
-                        onClick={() => fetchItems()}>refresh items</button>
+                        className="buttonShop"
+                        style={{ marginBottom:"1.5em" ,
+                            marginTop:"1.5em",
+                            padding:"0.7em",
+                            fontSize:"1em" ,
+                            backgroundColor:"mediumspringgreen" ,
+                            border:"3px solid indianred" ,
+                            borderRadius:"1.5em"}}
+                        onClick={() => fetchItems()}>Refresh list of items</button>
+
+                    <h5 style={{marginTop:"0.5em" , marginBottom:"0.5em"}}>Sources :</h5>
+
+                    <div style={{marginTop:"0.5em" , marginBottom:"0.5em"}}>
+                        <a href="https://course-api.com/javascript-store-products">
+                            <h6 className="colorLink">https://course-api.com/javascript-store-products</h6>
+                        </a>
+                    </div>
+
+                    <div style={{marginTop:"0.5em" , marginBottom:"0.5em"}}>
+                        <a href="https://www.youtube.com/watch?v=4UZrsTqkcW4&t=32822s">
+                            <h6 className="colorLink">https://www.youtube.com/watch?v=4UZrsTqkcW4&t=32822s</h6>
+                        </a>
+                    </div>
+
+                    <div style={{marginTop:"0.5em" , marginBottom:"0.5em"}}>
+                        <a href="https://www.youtube.com/watch?v=Law7wfdg_ls">
+                            <h6 className="colorLink">https://www.youtube.com/watch?v=Law7wfdg_ls</h6>
+                        </a>
+                    </div>
+
                 </div>
             </main>
         )
@@ -55,23 +82,22 @@ function MyShopComponent(){
                         {items.map((item) =>{
                             return (
                                 <>
-
+                                    <h3 style={{marginTop:"1.5em" ,marginBottom:"0.5em"}}>List of {items.length} items</h3>
                                     <div className="componentTagAbout">
                                         <div  style={{marginTop:"1.5em" ,marginBottom:"0.5em"}}>
-                                            <h5 style={{marginTop:"0.7em" ,marginBottom:"0.7em" , paddingTop:"1.5em"}}>The name of the item is <h3>{item.fields.name}</h3> </h5>
-                                            <h5 style={{marginTop:"0.7em" ,marginBottom:"0.7em"}}>The id of the item is <h3>{item.id}</h3> </h5>
-                                            <h5 style={{marginTop:"0.7em" ,marginBottom:"0.7em"}}>The price of the item is <h3>{item.fields.price}</h3></h5>
-                                            <h5 style={{marginTop:"0.7em" ,marginBottom:"0.7em"}}>The company of the item is <h3>{item.fields.company}</h3></h5>
+                                            <h5 style={{marginTop:"0.7em" ,marginBottom:"0.7em" , paddingTop:"1.5em"}}>The name of the item is <span>{item.fields.name}</span> </h5>
+                                            {/*<h5 style={{marginTop:"0.7em" ,marginBottom:"0.7em"}}>The id of the item is <span>{item.id}</span> </h5>*/}
+                                            <h5 style={{marginTop:"0.7em" ,marginBottom:"0.7em"}}>The price of the item is <span>{item.fields.price}</span></h5>
+                                            <h5 style={{marginTop:"0.7em" ,marginBottom:"0.7em"}}>The company of the item is <span>{item.fields.company}</span></h5>
                                         </div>
 
                                         <li key={item.id} >
 
                                             {/*<Link to={`/shop/${item.id}`} style={{color:"mediumspringgreen"}}>The id of the item is {item.id} .</Link>*/}
-                                            <Link
-                                                to={`/shop/${item.id}`}>
-                                                {/*{item.fields.name}*/}
-                                                {/*{item.fields.price}*/}
-                                                {/*{item.fields.company}*/}
+                                            <Link to={`/shop/${item.id}`}> {item.fields.name}
+
+                                                {item.fields.price}
+                                                {item.fields.company}
                                                 {item.fields.image.map((image) =>{
                                                     return (
                                                         <div >
@@ -89,7 +115,16 @@ function MyShopComponent(){
                                         </li>
 
 
-                                        <button onClick={() => removeItem(item.id)}>Remove item</button>
+                                        <button
+                                            className="buttonShop"
+                                            style={{ marginBottom:"1.5em" ,
+                                                marginTop:"1.5em",
+                                                padding:"0.7em",
+                                                fontSize:"1em" ,
+                                                backgroundColor:"mediumspringgreen" ,
+                                                border:"3px solid indianred" ,
+                                                borderRadius:"1.5em"}}
+                                            onClick={() => removeItem(item.id)}>Remove item</button>
 
                                     </div>
 
@@ -99,34 +134,41 @@ function MyShopComponent(){
 
                     </ul>
 
-
-
-                    <h5 style={{marginTop:"0.5em" , marginBottom:"0.5em"}}>Photo sources</h5>
-
-                    <div style={{marginTop:"0.5em" , marginBottom:"0.5em"}}>
-                        <a href="https://course-api.com/javascript-store-products">
-                            <h6 className="colorLink">https://course-api.com/javascript-store-products</h6>
-                        </a>
-                    </div>
-
-                    <div style={{marginTop:"0.5em" , marginBottom:"0.5em"}}>
-                        <a href="https://www.youtube.com/watch?v=4UZrsTqkcW4&t=32822s">
-                            <h6 className="colorLink">https://www.youtube.com/watch?v=4UZrsTqkcW4&t=32822s</h6>
-                        </a>
-                    </div>
-
                 </section>
-
-
 
             </>
 
             <button
+                className="buttonShop"
                 onClick={() =>setItems([])}
-                style={{fontSize:"2em" ,
-                    backgroundColor:"blue" ,
-                    color:"white"}}
+                style={{ marginBottom:"1.5em" ,
+                    marginTop:"1.5em",
+                    padding:"0.7em",
+                    fontSize:"1em" ,
+                    backgroundColor:"mediumspringgreen" ,
+                    border:"3px solid indianred" ,
+                    borderRadius:"1.5em"}}
             >Remove all items at once</button>
+
+            <h5 style={{marginTop:"0.5em" , marginBottom:"0.5em"}}>Sources :</h5>
+
+            <div style={{marginTop:"0.5em" , marginBottom:"0.5em"}}>
+                <a href="https://course-api.com/javascript-store-products">
+                    <h6 className="colorLink">https://course-api.com/javascript-store-products</h6>
+                </a>
+            </div>
+
+            <div style={{marginTop:"0.5em" , marginBottom:"0.5em"}}>
+                <a href="https://www.youtube.com/watch?v=4UZrsTqkcW4&t=32822s">
+                    <h6 className="colorLink">https://www.youtube.com/watch?v=4UZrsTqkcW4&t=32822s</h6>
+                </a>
+            </div>
+
+            <div style={{marginTop:"0.5em" , marginBottom:"0.5em"}}>
+                <a href="https://www.youtube.com/watch?v=Law7wfdg_ls">
+                    <h6 className="colorLink">https://www.youtube.com/watch?v=Law7wfdg_ls</h6>
+                </a>
+            </div>
 
         </main>
     )

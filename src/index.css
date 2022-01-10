@@ -29,6 +29,18 @@ button{
     color:darkblue;
 }
 
+button:hover{
+    color:indianred;
+}
+
+.buttonShop{
+    color:darkblue;
+}
+
+.buttonShop:hover{
+    color:indianred;
+}
+
 .logoText{
     text-shadow: 1px 1px 5px mediumspringgreen;
 }
@@ -110,6 +122,10 @@ button{
         color:darkblue;
     }
 
+    .buttonShop{
+        color:darkblue;
+    }
+
     .imgItemAbout{
         box-shadow:3px 3px 5px gray;
     }
@@ -132,4 +148,41 @@ button{
         align-items: center;
         justify-content: center;
     }
+}
+
+
+
+.myTitle {
+    text-transform: capitalize;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.myTitle::before {
+    content: "";
+    display: block;
+    height: 5px;
+    background: indianred;
+    border-radius: 15px;
+    flex-grow: 55;
+    margin-right: 0.7em;
+}
+
+.myTitle::after {
+    content: "";
+    display: block;
+    height: 5px;
+    background: indianred;
+    border-radius: 15px;
+    flex-grow: 55;
+    margin-left: 0.7em;
+}
+
+.photoHomeSources{
+    text-align: center;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    padding: 0.7em;
 }

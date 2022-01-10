@@ -5,7 +5,7 @@ import {reducer} from"./MyReducer";
 // reducer function
 
 const defaultState={
-  people:[],
+  items:[],
   isModalOpen: false,
   modalContent: "hello me"
 };
@@ -72,15 +72,15 @@ const Index = () => {
               Add Item
             </button>
           </form>
-          {state.people.map((person) =>{
+          {state.items.map((item) =>{
             return (
                 <>
-              <div key={person.id} className="componentTagAbout">
-                <h4>My id is number {person.id} and my value is {person.name} .</h4>
+              <div key={item.id} className="componentTagAbout">
+                <h4 style={{marginTop:"1.5em", padding:"1.7em"}}>My id is number {item.id} and my value is {item.name} .</h4>
                 <button
                     type="button"
                     style={{marginTop:"1.5em" ,marginBottom:"1.5em" , padding:"0.7em", fontSize:"1em" , backgroundColor:"mediumspringgreen" , border:"3px solid indianred" , borderRadius:"1.5em"}}
-                    onClick={()=> dispatch({type:"REMOVE_ITEM" , payload:person.id}) }>Remove Item</button>
+                    onClick={()=> dispatch({type:"REMOVE_ITEM" , payload:item.id}) }>Remove Item</button>
               </div>
                 </>
             )
