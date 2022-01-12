@@ -5,9 +5,6 @@ import "../App.css";
 // const url=`https://course-api.com/javascript-store-products`
 
 function Item(){
-
-
-
     const {id}=useParams() ;
 
     return(
@@ -22,5 +19,4 @@ function Item(){
         </>
     )
 }
-
 export default Item;

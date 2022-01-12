@@ -1,12 +1,16 @@
-import React from "react";
+import React, {useState} from "react";
 import "../App.css";
 import Index from "../TutorialComponents/6-useReducer/setup";
 import ContextAPI from "../TutorialComponents/8-useContext/setup/1-context-api";
 import Slider from "../itemsSlider/Slider";
+import {PhotoAboutListSources} from "../TutorialComponents/8-useContext/setup/photoAboutListSources";
+import {PhotoAboutSliderSources} from "../itemsSlider/photoAboutSliderSources";
 
 
 
 function About(){
+
+
     return(
         <>
         <div style={{textAlign:"center"}}>
@@ -24,6 +28,10 @@ function About(){
             <div className="componentTagAbout">
                 <Slider/>
             </div>
+
+            <PhotoAboutListSources/>
+
+            <PhotoAboutSliderSources/>
 
         </div>
         </>

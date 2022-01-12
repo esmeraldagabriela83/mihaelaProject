@@ -1,6 +1,7 @@
 import React from 'react';
 import "../App.css";
-import {HomeUl} from "../homeComponents/ulHome/homeUl";
+import {HomeGrid} from "../homeComponents/gridHome/homeGrid";
+
 
 
 export function Home() {
@@ -11,7 +12,22 @@ export function Home() {
                     textAlign:"center" , textShadow:"2px 2px 5px gray" ,
                     marginTop:"1.5em" , marginBottom:"1.5em"}}
                 className="componentTagAbout myTitle">Item gallery</h1>
-            <HomeUl/>
+
+            <div className="mobileBlockScreenFlex">
+                <div className="parent ">
+                    <div className="child "></div>
+                </div>
+
+                <div className="parentCenter ">
+                    <div className="childCenter "></div>
+                </div>
+
+                <div className="parent ">
+                    <div className="child "></div>
+                </div>
+            </div>
+
+            <HomeGrid/>
         </div>
     )
 }

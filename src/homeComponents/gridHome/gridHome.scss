@@ -25,7 +25,7 @@ $column-base-width: 100%/$columns;
     flex-wrap: wrap;
     [class*="col-"] {
       //border: solid darkmagenta 3px;
-      min-height: 15em;
+      min-height: 13em;
       width: $column-base-width;
       padding: 0 15px;
 
@@ -41,39 +41,25 @@ $column-base-width: 100%/$columns;
   }
 }
 
-.movColor{
-  //background-color: magenta;
-  display:flex;
-  align-items: center;
-  justify-content: space-evenly;
-  margin-bottom: 1.5em;
-  padding-bottom: 1.5em;
-}
 .yellowColor{
-  //background-color: yellow;
+ // background-color: yellow;
   display:flex;
   align-items: center;
   justify-content: space-evenly;
 }
 .blue{
-  //background-color: dodgerblue;
+ //background-color: dodgerblue;
   display:flex;
   align-items: center;
   justify-content: space-evenly;
-}
-.pinkColor{
-  //background-color: #e71f79;
-}
-.footer {
-  //background-color: #0c3254;
-  height: 17.5em;
 }
 
 .homeFooter{
+  //background-color: #0c3254;
+  height:10em;
   display:flex;
   align-items: center;
   justify-content: space-evenly;
-
 }
 
 
