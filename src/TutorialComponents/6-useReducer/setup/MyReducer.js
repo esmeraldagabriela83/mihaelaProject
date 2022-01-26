@@ -1,7 +1,7 @@
 
 export const reducer=(state , action) =>{
-    console.log(state , action);
-    console.log(state);
+    // console.log(state , action);
+    // console.log(state);
     if(action.type === "ADD_ITEM"){
 
         const newPeople=[...state.items , action.payload];

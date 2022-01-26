@@ -3,6 +3,7 @@ import React, {Component} from "react";
 import ClockDate from "./clockDate";
 import ClockTime from "./clockTime";
 
+
 class Clock extends Component {
     constructor(props) {
         super(props);
@@ -22,6 +23,9 @@ class Clock extends Component {
     render() {
         return<>
             <ClockDate date={this.state.dateTime.toLocaleDateString()}/>
+            <ion-icon name="time-outline"
+            style={{fontSize:"3.5em"}}
+            ></ion-icon>
             <ClockTime time={this.state.dateTime.toLocaleTimeString()}/>
         </>
     }

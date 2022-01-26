@@ -33,7 +33,7 @@ function MyShopComponent(){
         return(
             <main>
                 <div className="title shopTitleList">
-                    <h2 style={{marginTop:"1.5em" ,marginBottom:"0.5em"}}>No items left</h2>
+                    <h2 style={{marginTop:"1.5em" ,marginBottom:"0.5em"}}>No list items left</h2>
 
                     <button
                         className="buttonShop"
@@ -82,14 +82,15 @@ function MyShopComponent(){
                                                 {item.fields.image.map((image) =>{
                                                     return (
                                                         <div >
-                                                            <img key={image.id} src={image.url} alt={item.name}
-                                                                 style={{ borderRadius:"0.5em" ,
-                                                                     marginBottom:"1.5em" ,
-                                                                     marginTop:"1.5em" ,
-                                                                     width:"27em" ,
-                                                                     height:"20em" ,
-                                                                     boxShadow:"3px 3px 5px gray",
-                                                                     border:"3px solid mediumspringgreen"}}/>
+                                                            <img key={image.id} src={image.url} alt={item.name} className="shoppingCartImage"
+                                                                 // style={{ borderRadius:"0.5em" ,
+                                                                 //     marginBottom:"1.5em" ,
+                                                                 //     marginTop:"1.5em" ,
+                                                                 //     width:"27em" ,
+                                                                 //     height:"20em" ,
+                                                                 //     boxShadow:"3px 3px 5px gray",
+                                                                 //     border:"3px solid mediumspringgreen"}}
+                                                                />
                                                         </div>
                                                     )
                                                 })}
@@ -130,7 +131,7 @@ function MyShopComponent(){
                     backgroundColor:"mediumspringgreen" ,
                     border:"3px solid indianred" ,
                     borderRadius:"1.5em"}}
-            >Remove all items at once</button>
+            >Remove all list items above at once</button>
 
 
 

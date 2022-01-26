@@ -280,7 +280,27 @@ button:hover{
     padding: 0.7em;
 }
 
+.shoppingCartImage{
+    border-radius: 0.5em;
+    margin-bottom: 1.5em;
+    margin-top: 1.5em;
+    width:27em;
+    height:20em;
+    box-shadow: 3px 3px 5px gray;
+    border:3px solid mediumspringgreen;
+}
+
 @media screen and (max-width:959px) {
+
+    .shoppingCartImage{
+        border-radius: 0.5em;
+        margin-bottom: 1.5em;
+        margin-top: 1.5em;
+        width:20em;
+        height:13em;
+        /*box-shadow: 3px 3px 5px gray;*/
+        border:3px solid mediumspringgreen;
+    }
 
     .photoHomeSources {
         margin-top:2.5em;
@@ -313,6 +333,7 @@ button:hover{
     font-size: 0.5em;
     width: 17em;
     height:7em;
+    text-shadow: 1px 1px 2px gray;
     /*border:3px solid mediumspringgreen;*/
 }
 
@@ -325,6 +346,27 @@ a{
     text-shadow: 1px 1px 2px gray;
 }
 
+ion-icon{
+    color:mediumspringgreen;
+    background-color: indianred;
+    padding:0.15em;
+    border-radius: 50%;
+}
+
+ion-icon:hover{
+    color:indianred;
+    background-color: mediumspringgreen;
+}
 
 
+
+
+
+.basketDiv{
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
 
