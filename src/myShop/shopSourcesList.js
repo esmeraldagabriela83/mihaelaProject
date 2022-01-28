@@ -1,33 +1,33 @@
 
-import React from "react";
+import React ,{useState} from "react";
+import PhotographyShopListSources from "./photographyShopListSources";
 
 export function ShopSourcesList() {
 
+    const [show,setShow] = useState(false) ;
 
     return (
-        <div className="componentTagAbout shopSources" style={{paddingTop:"1.5em" , paddingBottom:"1.5em"}}>
+        <>
 
-            <h5 style={{marginTop:"0.5em" , marginBottom:"0.5em"}}>Sources of list items:</h5>
+            {show && <PhotographyShopListSources/>}
+            <button
+                style={{ marginBottom:"1.5em" ,
+                    marginTop:"1.5em",
+                    padding:"0.7em",
+                    fontSize:"1em" ,
+                    backgroundColor:"mediumspringgreen" ,
+                    border:"3px solid indianred" ,
+                    borderRadius:"1.5em",
+                    marginLeft: "17vw",
+                    marginRight: "17vw"
+                }}
+                onClick={() => {
+                    setShow(!show);
+                }}>{show ? "Hide item list shop photography sources" : "Show item list shop photography sources"}</button>
 
-            <div style={{marginTop:"0.5em" , marginBottom:"0.5em"}}>
-                <a href="https://course-api.com/javascript-store-products">
-                    <h6 className="colorLink">https://course-api.com/javascript-store-products</h6>
-                </a>
-            </div>
 
-            <div style={{marginTop:"0.5em" , marginBottom:"0.5em"}}>
-                <a href="https://www.youtube.com/watch?v=4UZrsTqkcW4&t=32822s">
-                    <h6 className="colorLink">https://www.youtube.com/watch?v=4UZrsTqkcW4&t=32822s</h6>
-                </a>
-            </div>
 
-            <div style={{marginTop:"0.5em" , marginBottom:"0.5em"}}>
-                <a href="https://www.youtube.com/watch?v=Law7wfdg_ls">
-                    <h6 className="colorLink">https://www.youtube.com/watch?v=Law7wfdg_ls</h6>
-                </a>
-            </div>
-
-        </div>
+        </>
     )
 }
 

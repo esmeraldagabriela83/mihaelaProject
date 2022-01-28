@@ -31,7 +31,7 @@ import React from "react";
                                         fontSize:"1em" ,
                                         backgroundColor:"mediumspringgreen" ,
                                         border:"3px solid indianred" ,
-                                        borderRadius:"50%"}}
+                                        borderRadius:"1em"}}
                                     onClick={() => onAdd(item)}>+</button>
                                 <button
                                     className="buttonShop"
@@ -42,7 +42,7 @@ import React from "react";
                                         fontSize:"1em" ,
                                         backgroundColor:"mediumspringgreen" ,
                                         border:"3px solid indianred" ,
-                                        borderRadius:"50%"}}
+                                        borderRadius:"1em"}}
                                     onClick={() => onRemove(item)}>-</button>
                             </div>
 

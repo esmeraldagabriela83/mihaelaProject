@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import dataSlider from './dataSlider';
 import "./indexSlider.css" ;
-
+import previous from "../icons/previous.svg";
+import next from "../icons/next.svg";
 
 function Slider() {
 
@@ -60,12 +61,14 @@ function Slider() {
 
                 <button
                     className="prev" onClick={() => setIndex(index - 1)}>
-                    Previous item
+                    <img src={previous} alt="previous" style={{height:"3.7em" , width:"3.7em"}}/>
+                    {/*Previous item*/}
                 </button>
 
                 <button
                     className="next" onClick={() => setIndex(index + 1)}>
-                    Next item
+                    <img src={next} alt="next" style={{height:"3.7em" , width:"3.7em"}}/>
+                    {/*Next item*/}
                 </button>
 
             </div>

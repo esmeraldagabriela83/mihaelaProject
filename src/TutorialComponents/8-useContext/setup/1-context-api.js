@@ -35,7 +35,7 @@ const ContextAPI = () => {
               value={{removeItem , items}}
               style={{backgroundColor:"yellowgreen" , border:"3px solid black"}}>
 
-          <h3 style={{marginBottom:"1.5em" ,marginTop:"1.5em" , paddingTop:"1.5em" }}>List of {data.length} items</h3>
+          <h3 style={{marginBottom:"1.5em" ,marginTop:"1.5em" , paddingTop:"1.5em" }}>List of {items.length} items</h3>
           <List />
 
               <button className="btn"
