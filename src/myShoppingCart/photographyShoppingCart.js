@@ -29,6 +29,12 @@ class PhotographyShoppingCartSources extends Component {
                 <h5 style={{marginTop:"0.5em" , marginBottom:"0.5em"}}>Shopping cart sources:</h5>
 
                 <div style={{marginTop:"0.5em" , marginBottom:"0.5em"}}>
+                    <a href="https://www.youtube.com/watch?v=AmIdY1Eb8tY&t=151s">
+                        <h6 className="colorLink">https://www.youtube.com/watch?v=AmIdY1Eb8tY&t=151s</h6>
+                    </a>
+                </div>
+
+                <div style={{marginTop:"0.5em" , marginBottom:"0.5em"}}>
                     <a href="https://images.unsplash.com/photo-1509222796416-4a1fef025e92?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=991&q=80">
                         <h6 className="colorLink">https://images.unsplash.com/photo-1509222796416-4a1fef025e92?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=991&q=80</h6>
                     </a>
@@ -64,15 +70,11 @@ class PhotographyShoppingCartSources extends Component {
                     </a>
                 </div>
 
-                <div style={{marginTop:"0.5em" , marginBottom:"0.5em"}}>
-                    <a href="https://www.youtube.com/watch?v=AmIdY1Eb8tY&t=151s">
-                        <h6 className="colorLink">https://www.youtube.com/watch?v=AmIdY1Eb8tY&t=151s</h6>
-                    </a>
-                </div>
-
             </div>
         )
     }
 }
 
 export default PhotographyShoppingCartSources;
+
+
