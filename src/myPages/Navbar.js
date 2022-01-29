@@ -9,10 +9,8 @@ function Nav(){
         <>
             <nav style={{marginTop:"0.5em"}}>
                 <div style={{display:"flex"}}>
-                    <h4
-                        style={{paddingTop:"0.7em"}}
-                        className="logoText">Project<br/><span style={{letterSpacing:"7px"}}>ITEM</span></h4>
-                    <img src={logoShape} alt="myLogo" style={{height:"3.7em" , width:"3.7em" , marginLeft:"1em"}}/>
+                    <h4 className="logoText">Project<br/><span style={{letterSpacing:"7px"}}>ITEM</span></h4>
+                    <img src={logoShape} alt="logoShape" className="logoShape"/>
                 </div>
                 <ul className="nav-links">
                     <Link to="/"><li className="liNavbar">Home</li></Link>

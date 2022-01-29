@@ -15,12 +15,12 @@
 
     .prev{
         padding:0.1em;
-        margin-top: -1em;
+        margin-top: -0.7em;
         font-size: 0.1em;
     }
     .next{
         padding:0.1em;
-        margin-top: -1em;
+        margin-top: -0.7em;
         font-size: 0.1em;
     }
 
@@ -67,19 +67,19 @@
     left: 0;
     padding:0.3em;
     margin-left: 2.5em;
-    font-size: 0.5em;
+    font-size: 0.7em;
     background-color: mediumspringgreen;
     border: 3px solid indianred;
-    border-radius: 1.5em;
+    border-radius: 0.5em;
 }
 .next {
     right: 0;
     padding:0.3em;
     margin-right: 2.5em;
-    font-size: 0.5em;
+    font-size: 0.7em;
     background-color: mediumspringgreen;
     border: 3px solid indianred;
-    border-radius: 1.5em;
+    border-radius: 0.5em;
 }
 
 article {

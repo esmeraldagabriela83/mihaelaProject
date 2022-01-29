@@ -41,8 +41,21 @@ button:hover{
     color:indianred;
 }
 
+.liNavbar{
+    padding-right: 0.3em;
+    padding-left: 0.3em;
+}
+
 .logoText{
     text-shadow: 1px 1px 3px mediumspringgreen;
+    margin-top: 0.3em;
+}
+
+.logoShape{
+    height:1.7em;
+    width:1.7em;
+    margin-left: 0.3em;
+    margin-top: 0.7em;
 }
 
 .supervisors{
@@ -113,7 +126,14 @@ button:hover{
     }
 
     .logoText{
+        margin-top: 1.5em;
         text-shadow: 3px 3px 5px gray;
+    }
+
+    .logoShape{
+        height:3.7em;
+        width:3.7em;
+        margin-left: 1em;
     }
 
     button{
@@ -296,8 +316,8 @@ button:hover{
         border-radius: 0.5em;
         margin-bottom: 1.5em;
         margin-top: 1.5em;
-        width:20em;
-        height:13em;
+        width:15em;
+        height:8em;
         /*box-shadow: 3px 3px 5px gray;*/
         border:3px solid mediumspringgreen;
     }

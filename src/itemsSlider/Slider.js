@@ -59,15 +59,13 @@ function Slider() {
                     </article>
                 })}
 
-                <button
-                    className="prev" onClick={() => setIndex(index - 1)}>
-                    <img src={previous} alt="previous" style={{height:"3.7em" , width:"3.7em"}}/>
+                <button className="prev" onClick={() => setIndex(index - 1)}>
+                    <img src={previous} alt="previous" style={{height:"2.5em" , width:"2.5em"}}/>
                     {/*Previous item*/}
                 </button>
 
-                <button
-                    className="next" onClick={() => setIndex(index + 1)}>
-                    <img src={next} alt="next" style={{height:"3.7em" , width:"3.7em"}}/>
+                <button className="next" onClick={() => setIndex(index + 1)}>
+                    <img src={next} alt="next" style={{height:"2.5em" , width:"2.5em"}}/>
                     {/*Next item*/}
                 </button>
 
