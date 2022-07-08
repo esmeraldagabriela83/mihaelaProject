@@ -43,73 +43,73 @@ class PhotographyHomeSources extends Component {
                     <h5 style={{marginTop:"0.5em" , marginBottom:"0.5em"}}>Photo sources</h5>
 
                     <div style={{marginTop:"0.5em" , marginBottom:"0.5em"}}>
-                        <a href={urlPhoto1}>
+                        <a href={urlPhoto1} target="_blank">
                             <h6 className="colorLink">{urlPhoto1}</h6>
                         </a>
                     </div>
 
                     <div style={{marginTop:"0.5em" , marginBottom:"0.5em"}}>
-                        <a href={urlPhoto2}>
+                        <a href={urlPhoto2} target="_blank">
                             <h6 className="colorLink">{urlPhoto2}</h6>
                         </a>
                     </div>
 
                     <div style={{marginTop:"0.5em" , marginBottom:"0.5em"}}>
-                        <a href={urlPhoto3}>
+                        <a href={urlPhoto3} target="_blank">
                             <h6 className="colorLink">{urlPhoto3}</h6>
                         </a>
                     </div>
 
                     <div style={{marginTop:"0.5em" , marginBottom:"0.5em"}}>
-                        <a href={urlPhoto4}>
+                        <a href={urlPhoto4} target="_blank">
                             <h6 className="colorLink">{urlPhoto4}</h6>
                         </a>
                     </div>
 
                     <div style={{marginTop:"0.5em" , marginBottom:"0.5em"}}>
-                        <a href={urlPhoto5}>
+                        <a href={urlPhoto5} target="_blank">
                             <h6 className="colorLink">{urlPhoto5}</h6>
                         </a>
                     </div>
 
                     <div style={{marginTop:"0.5em" , marginBottom:"0.5em"}}>
-                        <a href={urlPhoto6}>
+                        <a href={urlPhoto6} target="_blank">
                             <h6 className="colorLink">{urlPhoto6}</h6>
                         </a>
                     </div>
 
                     <div style={{marginTop:"0.5em" , marginBottom:"0.5em"}}>
-                        <a href={urlPhoto7}>
+                        <a href={urlPhoto7} target="_blank">
                             <h6 className="colorLink">{urlPhoto7}</h6>
                         </a>
                     </div>
 
                     <div style={{marginTop:"0.5em" , marginBottom:"0.5em"}}>
-                        <a href={urlPhoto8}>
+                        <a href={urlPhoto8} target="_blank">
                             <h6 className="colorLink">{urlPhoto8}</h6>
                         </a>
                     </div>
 
                     <div style={{marginTop:"0.5em" , marginBottom:"0.5em"}}>
-                        <a href={urlPhoto9}>
+                        <a href={urlPhoto9} target="_blank">
                             <h6 className="colorLink">{urlPhoto9}</h6>
                         </a>
                     </div>
 
                     <div style={{marginTop:"0.5em" , marginBottom:"0.5em"}}>
-                        <a href={urlPhoto11}>
+                        <a href={urlPhoto11} target="_blank">
                             <h6 className="colorLink">{urlPhoto11}</h6>
                         </a>
                     </div>
 
                     <div style={{marginTop:"0.5em" , marginBottom:"0.5em"}}>
-                        <a href={urlPhoto12}>
+                        <a href={urlPhoto12} target="_blank">
                             <h6 className="colorLink">{urlPhoto12}</h6>
                         </a>
                     </div>
 
                     <div style={{marginTop:"0.5em" , marginBottom:"0.5em"}}>
-                        <a href={urlPhoto13}>
+                        <a href={urlPhoto13} target="_blank">
                             <h6 className="colorLink">{urlPhoto13}</h6>
                         </a>
                     </div>

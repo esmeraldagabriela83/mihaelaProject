@@ -40,17 +40,15 @@ function AppGabi(){
                  <Box />
                  </div>
 
-                 <div className="supervisors" style={{marginBottom:"1.5em"}}>
-                     <div className="catalin">
-                     <h5>Catalin Marin</h5>
+                 <div className="projectItem" style={{marginBottom:"1.5em"}}>
+                     <div className="project">
+                     <h5>Project</h5>
                      </div>
 
-                     <div className="supervisorsAnimation">
-                         <h6><span>Supervisors</span></h6>
-                     </div>
+                     <div className="projectItemAnimation"> <h5>React App</h5></div>
 
-                     <div className="costica">
-                     <h5 >Costica Puntaru</h5>
+                     <div className="item">
+                     <h5 >Item</h5>
                      </div>
                  </div>
 
@@ -71,6 +69,3 @@ function AppGabi(){
 
 
 export default AppGabi;
-
-
-

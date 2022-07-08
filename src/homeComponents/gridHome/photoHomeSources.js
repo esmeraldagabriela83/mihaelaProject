@@ -2,9 +2,6 @@
 import React ,{useState} from "react";
 import PhotographyHomeSources from "./photographyHomeSources";
 
-
-
-
 export function PhotoHomeSources() {
 
     const [show,setShow] = useState(false) ;
@@ -30,8 +27,3 @@ export function PhotoHomeSources() {
         </>
     )
 }
-
-
-
-
-

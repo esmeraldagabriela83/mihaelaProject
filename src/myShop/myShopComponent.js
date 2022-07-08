@@ -2,9 +2,6 @@ import React  , {useState , useEffect} from "react";
 import {Link} from "react-router-dom";
 import "../App.css";
 
-
-
-
 function MyShopComponent(){
 
     const [items , setItems]=useState([]);
@@ -60,10 +57,10 @@ function MyShopComponent(){
                         style={{marginTop:"1.5em" ,marginBottom:"0.5em"}}>List of {items.length} items</h2>
                     <ul className="ulShop">
 
-                        {items.map((item) =>{
+                        {items.map((item ,index) =>{
                             return (
                                 <>
-                                    <div className="componentTagAbout">
+                                    <div className="componentTagAbout" key={index}>
                                         <div  style={{marginTop:"1.5em" ,marginBottom:"0.5em"}}>
                                             <h5 style={{marginTop:"0.7em" ,marginBottom:"0.7em" , paddingTop:"1.5em"}}>The name of the item is : <span>{item.fields.name} .</span> </h5>
                                             {/*<h5 style={{marginTop:"0.7em" ,marginBottom:"0.7em"}}>The id of the item is <span>{item.id}</span> . </h5>*/}
@@ -81,16 +78,8 @@ function MyShopComponent(){
                                                 {item.fields.company}
                                                 {item.fields.image.map((image) =>{
                                                     return (
-                                                        <div >
-                                                            <img key={image.id} src={image.url} alt={item.name} className="shoppingCartImage"
-                                                                 // style={{ borderRadius:"0.5em" ,
-                                                                 //     marginBottom:"1.5em" ,
-                                                                 //     marginTop:"1.5em" ,
-                                                                 //     width:"27em" ,
-                                                                 //     height:"20em" ,
-                                                                 //     boxShadow:"3px 3px 5px gray",
-                                                                 //     border:"3px solid mediumspringgreen"}}
-                                                                />
+                                                        <div>
+                                                            <img key={image.id} src={image.url} alt={item.name} className="shoppingCartImage"/>
                                                         </div>
                                                     )
                                                 })}
@@ -144,4 +133,3 @@ function MyShopComponent(){
 }
 
 export default MyShopComponent;
-
